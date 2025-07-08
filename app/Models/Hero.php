@@ -8,6 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class Hero extends Model
 {
     use HasFactory;
-    protected $fillable = ['title', 'image', 'desc'];
+
+    protected $table = 'heroes';
+
+    public $timestamps = false;
+
+    protected $fillable = [
+        'title',
+        'desc',
+        'image',
+    ];
+
+    protected $casts = [
+        'title' => 'string',
+        'desc' => 'string',
+        'image' => 'string',
+    ];
 
 }

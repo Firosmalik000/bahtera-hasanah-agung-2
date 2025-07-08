@@ -1,11 +1,17 @@
 <section
-    class="relative bg-cover min-h-screen flex items-center justify-center bg-center bg-no-repeat py-32 px-6 text-white"
-    style="background-image: url('/images/hero.jpg');">
-    <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+    class="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center py-32 px-6 text-white bg-white bg-blend-overlay"
+    style="background-image: url('{{ asset('storage/' . $hero->image) }}');">
+
+    {{-- Overlay gelap transparan --}}
+    <div class="absolute inset-0 bg-black bg-opacity-30"></div>
+
+    {{-- Konten teks di atas gambar --}}
     <div class="relative z-10 max-w-6xl mx-auto text-center">
-        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-md" id="hero_title">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-6 drop-shadow-md">
+            {{ $hero->title }}
         </h1>
-        <p class="text-lg md:text-xl mb-8 text-gray-200 max-w-3xl mx-auto" id="hero_subtitle">
+        <p class="text-lg md:text-xl mb-8 text-gray-200 max-w-3xl mx-auto">
+            {{ $hero->subtitle }}
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
             <a href="#layanan"
@@ -19,14 +25,3 @@
         </div>
     </div>
 </section>
-
-<SCript>
-    const dataHero = {
-        title: "PT. BAHTERA HASANAH AGUNG",
-        subtitle: "Mitra Terpercaya dalam Konstruksi & Penyediaan Tenaga Kerja Profesional",
-    }
-    $(document).ready(function() {
-        $('#hero_title').text(dataHero.title);
-        $('#hero_subtitle').text(dataHero.subtitle);
-    })
-</SCript>
