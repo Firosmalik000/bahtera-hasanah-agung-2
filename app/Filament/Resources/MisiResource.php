@@ -38,6 +38,7 @@ class MisiResource extends Resource
             FileUpload::make('image')
                 ->label('Gambar Utama')
                 ->image()
+                ->disk('public')
                 ->directory('misis')
                 ->columnSpan(2)
                 ->required(),

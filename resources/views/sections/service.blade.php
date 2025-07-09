@@ -1,4 +1,4 @@
-<section class="bg-gray-50 py-20 px-6 text-gray-800 w-full">
+<section id="services" class="bg-gray-50 py-20 px-6 text-gray-800 w-full">
     <div class="max-w-6xl mx-auto">
         <!-- Header -->
         <div class="text-center mb-12">
@@ -34,7 +34,8 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-2">{{ $item->title }}</h3>
-                        <p class="text-base leading-relaxed">{{ $item->desc }}</p>
+                        <p class="text-base leading-relaxed">{{ strip_tags($item->desc) }}</p>
+
                     </div>
                 </div>
             @endforeach

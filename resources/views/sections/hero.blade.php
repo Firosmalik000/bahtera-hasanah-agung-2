@@ -1,4 +1,4 @@
-<section
+<section id="home"
     class="relative bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center py-32 px-6 text-white bg-white bg-blend-overlay"
     style="background-image: url('{{ asset('storage/' . $hero->image) }}');">
 
@@ -11,10 +11,10 @@
             {{ $hero->title }}
         </h1>
         <p class="text-lg md:text-xl mb-8 text-gray-200 max-w-3xl mx-auto">
-            {{ $hero->subtitle }}
+            {{ $hero->desc }}
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
-            <a href="#layanan"
+            <a href="#services"
                 class="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition shadow">
                 Lihat Layanan Kami
             </a>

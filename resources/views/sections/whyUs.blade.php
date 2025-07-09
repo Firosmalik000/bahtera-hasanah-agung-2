@@ -30,7 +30,7 @@
                     </div>
                     <div>
                         <h3 class="text-xl font-semibold mb-1">{{ $item->title }}</h3>
-                        <p class="text-gray-600">{{ $item->desc }}</p>
+                        <p class="text-gray-600">{{ strip_tags($item->desc) }}</p>
                     </div>
                 </div>
             @endforeach

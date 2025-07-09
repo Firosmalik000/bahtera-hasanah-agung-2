@@ -1,4 +1,4 @@
-<section class="py-20 bg-gradient-to-b from-white via-indigo-50 to-white text-gray-800 w-full">
+<section id="about" class="py-20 bg-gradient-to-b from-white via-indigo-50 to-white text-gray-800 w-full">
     <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
 
         {{-- Gambar About --}}

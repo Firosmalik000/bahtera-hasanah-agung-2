@@ -1,15 +1,15 @@
-<section class="bg-indigo-50 py-16 text-gray-800 w-full px-24">
+<section id="contact" class="bg-indigo-50 py-16 text-gray-800 w-full px-24">
     <div class="max-w-full mx-auto">
         <div class="bg-white rounded-2xl shadow-lg p-8 text-left space-y-6">
 
             <!-- Kontak Info -->
-            <div class=" flex items-center  gap-x-2">
+            <div class=" flex items-start  gap-x-2">
                 <!-- Judul & Deskripsi -->
                 <div class="text-start w-2/4">
                     <h2 class="text-3xl md:text-4xl font-extrabold text-indigo-700 mb-4">
                         {{ $contact->title }}
                     </h2>
-                    <div class="text-lg text-gray-700">
+                    <div class="text-base text-gray-700">
                         {!! $contact->subtitle !!}
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                 <div class="flex items-start w-1/4 space-x-4">
                     <div class="text-xl"><i class="fa fa-location-dot text-red-500"></i></div>
                     <div>
-                        <p class="text-gray-700">
+                        <p class="text-gray-700 text-sm">
                             {{ $contact->address }}
                         </p>
                     </div>

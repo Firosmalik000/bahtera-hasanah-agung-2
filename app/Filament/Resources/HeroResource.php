@@ -31,8 +31,10 @@ class HeroResource extends Resource
             ->label('Gambar')
             ->image()
             ->directory('heroes')
+            ->disk('public') // ✅ ini penting agar cocok dengan ImageColumn
             ->columnSpan(2)
             ->required(),
+
         TextInput::make('title')
             ->label('Judul')
             ->required()
