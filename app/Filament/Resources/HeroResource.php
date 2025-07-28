@@ -52,6 +52,7 @@ public static function table(Table $table): Table
         ImageColumn::make('image')
         ->label('Gambar')
         ->disk('public')
+        ->visibility('public')
         ->defaultImageUrl('https://placehold.co/100x100?text=No+Image')
         ->circular(),
         TextColumn::make('title')->label('Judul')->searchable(),

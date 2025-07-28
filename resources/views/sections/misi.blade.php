@@ -10,7 +10,7 @@
             </div>
             @if ($misi->image)
                 <img src="{{ asset('storage/' . $misi->image) }}" alt="{{ $misi->title }}"
-                    class="mx-auto rounded-xl shadow-md w-full object-contain">
+                    class="mx-auto rounded-xl shadow-md  max-h-[300px] object-contain">
             @endif
         </div>
 
